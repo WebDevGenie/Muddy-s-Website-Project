@@ -1,74 +1,89 @@
 @import "_variables";
 @import "_header";
 
-#container {
-    background-color: #ffffff;
+html {
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  height: 100%;
+}
+
+#navbar {
+  background-color: #ffffff;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-    z-index: 1;
-    margin-bottom: 100px;
+  z-index: 1;
+  margin-bottom: 100px;
 }
 
 nav {
-    // overflow: hidden;
-    position: sticky;
-    background-color: white;
-    top: 0;
-    width: 100%;
-    ul {
-        text-align: center;
-        list-style-type: none;
-        margin: 0;
-        padding: 15px;
-        li {
-          display: inline;
-          font-family: $primaryFont;
-          font-size: 15px;
-          a {
-            color: $primaryBtn;
-            text-decoration: none;
-            padding: 14px;
-            background-position: 0 100%;     
-            -moz-transition: all .2s ease-in;
-            -o-transition: all .2s ease-in;
-            -webkit-transition: all .2s ease-in;
-            transition: all .2s ease-in;    
-            &:hover {
-              color: $hoverColor;
-            }
-          }
-
+  position: sticky;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    li {
+      display: inline;
+      font-family: $primaryFont;
+      font-size: 15px;
+      a {
+        color: $primaryBtn;
+        text-decoration: none;
+        padding: 14px;
+        background-position: 0 100%;     
+        -moz-transition: all .2s ease-in;
+        -o-transition: all .2s ease-in;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;    
+        &:hover {
+          color: $hoverColor;
         }
       }
+
+    }
+  }
 }
 
+header {
+  background-color: transparent;
+}
 
 button {
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    text-align: center; 
-    height:80px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    width:80px;
-    background-color: black;
-    pointer-events: auto;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center; 
+  height:80px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:80px;
+  background-color: black;
+  pointer-events: auto;
 }
 
 #grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 30px;
 }
 
-#bodyContainer {
-  position: relative;
-}
+// #bodyContainer {
+//   position: relative;
+// }
 
 button {
     position: absolute;
