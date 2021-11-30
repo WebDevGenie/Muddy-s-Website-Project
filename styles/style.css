@@ -1,0 +1,90 @@
+header {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container {
+  background-color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+
+nav ul li {
+  display: inline;
+  font-family: "Brush Script MT", cursive;
+  font-size: 15px;
+}
+
+nav ul li a {
+  color: #4b4949;
+  text-decoration: none;
+  padding: 14px;
+  background-position: 0 100%;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+nav ul li a:hover {
+  color: #cf7e49;
+}
+
+button {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  height: 80px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 80px;
+  background-color: black;
+  pointer-events: auto;
+}
+
+#grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+#bodyContainer {
+  position: relative;
+}
+
+button {
+  position: absolute;
+  -webkit-transform: translateX(-20%) translateY(-50%);
+          transform: translateX(-20%) translateY(-50%);
+}
+/*# sourceMappingURL=style.css.map */
