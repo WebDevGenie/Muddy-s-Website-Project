@@ -12,7 +12,7 @@ body {
 }
 
 #navbar {
-  background-color: #ffffff;
+  background-color: transparent;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -22,7 +22,6 @@ body {
 
 nav {
   position: sticky;
-  background-color: white;
   top: 0;
   width: 100%;
   ul {
@@ -31,9 +30,13 @@ nav {
     margin: 0;
     padding: 15px;
     li {
+      background-color: black;
       display: inline;
       font-family: $primaryFont;
       font-size: 15px;
+      &:hover {
+        background-color: purple;
+      }
       a {
         color: $primaryBtn;
         text-decoration: none;
@@ -86,7 +89,10 @@ button {
 // }
 
 button {
-    position: absolute;
-    -ms-transform: translateX(-20%) translateY(-50%);
-    transform: translateX(-20%) translateY(-50%);
+  position: absolute;
+  -ms-transform: translateX(-20%) translateY(-50%);
+  transform: translateX(-20%) translateY(-50%);
+  &:hover {
+    background-color: purple;
+  }
 }

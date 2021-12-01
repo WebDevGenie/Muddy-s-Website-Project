@@ -1,5 +1,5 @@
 header {
-  background: white;
+  background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +19,7 @@ body {
 }
 
 #navbar {
-  background-color: #ffffff;
+  background-color: transparent;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -30,7 +30,6 @@ body {
 nav {
   position: -webkit-sticky;
   position: sticky;
-  background-color: white;
   top: 0;
   width: 100%;
 }
@@ -43,13 +42,18 @@ nav ul {
 }
 
 nav ul li {
+  background-color: black;
   display: inline;
   font-family: "Brush Script MT", cursive;
   font-size: 15px;
 }
 
+nav ul li:hover {
+  background-color: purple;
+}
+
 nav ul li a {
-  color: #4b4949;
+  color: white;
   text-decoration: none;
   padding: 14px;
   background-position: 0 100%;
@@ -100,5 +104,9 @@ button {
   position: absolute;
   -webkit-transform: translateX(-20%) translateY(-50%);
           transform: translateX(-20%) translateY(-50%);
+}
+
+button:hover {
+  background-color: purple;
 }
 /*# sourceMappingURL=style.css.map */
