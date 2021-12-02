@@ -2,7 +2,7 @@
 @import "_header";
 
 html {
-  background-image: url(/images/background.jpg);
+  // background-image: url(/images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -19,6 +19,7 @@ body {
   z-index: 1;
   margin-bottom: 100px;
 }
+
 
 nav {
   position: sticky;
@@ -74,9 +75,8 @@ button {
   pointer-events: auto;
 }
 
-#grid {
+#flex {
   z-index: 10;
-  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -92,6 +92,10 @@ button {
   position: absolute;
   -ms-transform: translateX(-20%) translateY(-50%);
   transform: translateX(-20%) translateY(-50%);
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;   
   &:hover {
     background-color: purple;
   }
