@@ -69,6 +69,7 @@ header {
 }
 
 button {
+  position: absolute;
   color: white;
   font-size: 16px;
   border: none;
@@ -81,6 +82,14 @@ button {
   width: 80px;
   background-color: black;
   pointer-events: auto;
+  -webkit-transform: translateX(-20%) translateY(-50%);
+          transform: translateX(-20%) translateY(-50%);
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+button:hover {
+  background-color: purple;
 }
 
 #flex {
@@ -96,17 +105,5 @@ button {
   row-gap: 50px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
-}
-
-button {
-  position: absolute;
-  -webkit-transform: translateX(-20%) translateY(-50%);
-          transform: translateX(-20%) translateY(-50%);
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-}
-
-button:hover {
-  background-color: purple;
 }
 /*# sourceMappingURL=style.css.map */
