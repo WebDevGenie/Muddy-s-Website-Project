@@ -13,16 +13,22 @@ html {
   background-size: cover;
 }
 
+.bg-image {
+  position: fixed;
+  z-index: -1;
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+  top: -10;
+}
+
 body {
   margin: 0;
-  background-image: url("/images/bg.webp");
-  background-repeat: no-repeat;
-  -webkit-backdrop-filter: url(commonfilters.svg#filter);
-          backdrop-filter: url(commonfilters.svg#filter);
 }
 
 header {
   background-color: transparent;
+  display: block;
+  text-align: center;
 }
 
 #flex {
@@ -36,7 +42,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  row-gap: 50px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
   background-color: transparent;
@@ -51,9 +56,6 @@ header {
 }
 
 nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   width: 100%;
 }
 

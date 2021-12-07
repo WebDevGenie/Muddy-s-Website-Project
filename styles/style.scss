@@ -7,16 +7,23 @@ html {
   background-size: cover;
 }
 
+.bg-image {
+  position: fixed;
+  z-index: -1;
+  filter: opacity(50%);
+  top: -10;
+}
+
 body {
   margin: 0;
-  background-image: url("/images/bg.webp");
-  background-repeat: no-repeat;
-  backdrop-filter:url(commonfilters.svg#filter);
 }
 
 header {
   background-color: transparent;
+  display: block;
+  text-align: center;
 }
+
 
 #flex {
   border-top: groove;
@@ -24,13 +31,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  row-gap: 50px;
   column-gap: 30px;
   background-color: transparent;
 }
 
 #navbar {
-  // background-color: black;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -40,8 +45,6 @@ header {
 
 
 nav {
-  position: sticky;
-  top: 0;
   width: 100%;
   ul {
     text-align: center;
