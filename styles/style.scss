@@ -1,5 +1,4 @@
 @import "_variables";
-@import "_header";
 
 html {
   // background-image: url(/images/background.jpg);
@@ -54,7 +53,7 @@ nav {
     li {
       display: inline;
       font-family: $primaryFont;
-      font-size: 15px;
+      font-size: 1rem;
       a {
         color: $primaryBtn;
         text-decoration: none;
@@ -68,7 +67,6 @@ nav {
           color: $hoverColor;
         }
       }
-
     }
   }
 }
@@ -78,10 +76,9 @@ nav {
 button {
   position: absolute;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
-  text-align: center; 
   height:80px;
   border-radius:50%;
   -moz-border-radius:50%;
