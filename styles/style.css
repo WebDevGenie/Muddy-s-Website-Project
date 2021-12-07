@@ -35,8 +35,7 @@ header {
   -webkit-column-gap: 30px;
           column-gap: 30px;
   background-color: transparent;
-  margin-left: 15%;
-  margin-right: 15%;
+  bottom: 0;
 }
 
 #navbar {
@@ -103,5 +102,13 @@ button:hover {
 
 .bodyContainer {
   margin-top: 60px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Brush Script MT", cursive;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

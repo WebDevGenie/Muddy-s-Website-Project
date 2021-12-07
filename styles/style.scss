@@ -32,14 +32,14 @@ header {
   justify-content: center;
   column-gap: 30px;
   background-color: transparent;
-  
+  bottom: 0;
+
   // To control number of columns
-  margin-left: 15%;
-  margin-right: 15%;
+  // margin-left: 15%;
+  // margin-right: 15%;
 }
 
 #navbar {
-	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
   z-index: 1;
@@ -104,4 +104,13 @@ button {
 
 .bodyContainer {
   margin-top: 60px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: $primaryFont;
+  position: absolute;
+  
 }
