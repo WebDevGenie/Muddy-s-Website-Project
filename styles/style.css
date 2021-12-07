@@ -35,6 +35,8 @@ header {
   -webkit-column-gap: 30px;
           column-gap: 30px;
   background-color: transparent;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #navbar {
