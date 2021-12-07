@@ -14,10 +14,32 @@ html {
 }
 
 body {
-  height: 200%;
+  margin: 0;
   background-image: url("/images/bg.webp");
   background-repeat: no-repeat;
-  margin: 0;
+  -webkit-backdrop-filter: url(commonfilters.svg#filter);
+          backdrop-filter: url(commonfilters.svg#filter);
+}
+
+header {
+  background-color: transparent;
+}
+
+#flex {
+  border-top: groove;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 50px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  background-color: transparent;
 }
 
 #navbar {
@@ -25,6 +47,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: black;
 }
 
 nav {
@@ -42,7 +65,6 @@ nav ul {
 }
 
 nav ul li {
-  background-color: black;
   display: inline;
   font-family: "Brush Script MT", cursive;
   font-size: 15px;
@@ -59,10 +81,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #cf7e49;
-}
-
-header {
-  background-color: transparent;
 }
 
 button {
@@ -88,22 +106,6 @@ button {
 
 button:hover {
   color: #cf7e49;
-}
-
-#flex {
-  border-top: groove;
-  z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  row-gap: 50px;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
 }
 
 .bodyContainer {

@@ -8,10 +8,25 @@ html {
 }
 
 body {
-  height: 200%;
+  margin: 0;
   background-image: url("/images/bg.webp");
   background-repeat: no-repeat;
-  margin: 0;
+  backdrop-filter:url(commonfilters.svg#filter);
+}
+
+header {
+  background-color: transparent;
+}
+
+#flex {
+  border-top: groove;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 30px;
+  background-color: transparent;
 }
 
 #navbar {
@@ -20,6 +35,7 @@ body {
 	position: sticky;
 	top: 0;
   z-index: 1;
+  background-color: black;
 }
 
 
@@ -33,7 +49,6 @@ nav {
     margin: 0;
     padding: 15px;
     li {
-      background-color: black;
       display: inline;
       font-family: $primaryFont;
       font-size: 15px;
@@ -55,9 +70,7 @@ nav {
   }
 }
 
-header {
-  background-color: transparent;
-}
+
 
 button {
   position: absolute;
@@ -83,16 +96,6 @@ button {
   &:hover {
     color: $hoverColor;
   }  
-}
-
-#flex {
-  border-top: groove;
-  z-index: 10;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  row-gap: 50px;
-  column-gap: 30px;
 }
 
 .bodyContainer {
