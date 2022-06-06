@@ -1,5 +1,7 @@
 @import "_variables";
 
+$primary-color: #ffffff;
+
 html {
   // background-image: url(/images/background.jpg);
   background-repeat: no-repeat;
@@ -15,6 +17,7 @@ html {
 
 body {
   margin: 0;
+  text-align: center;
 }
 
 header {
@@ -23,18 +26,15 @@ header {
   text-align: center;
 }
 
-#flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 30px;
-  background-color: transparent;
-  bottom: 0;
-  z-index: 10;
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
 
-  // To control number of columns
-  margin-left: 15%;
-  margin-right: 15%;
+  max-width: max-content;
+  margin: 0 auto;
+
+  z-index: 10;
 }
 
 #navbar {
@@ -72,33 +72,30 @@ nav {
   }
 }
 
-button {
-  position: absolute;
-  color: white;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  height: 80px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  width: 80px;
-  background-color: black;
-  pointer-events: auto;
-  -ms-transform: translateX(-20%) translateY(-50%);
-  transform: translateX(-20%) translateY(-50%);
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  font-family: $primaryFont;
-  &:hover {
-    color: $hoverColor;
-  }
-}
-
 .bodyContainer {
   margin-top: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.imgText {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.25rem;
+  color: $primary-color;
+  background-color: black;
+  width: 100%;
+  border-radius: 10px;
+  text-decoration: none;
+
+  // Force text to display on one line
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 footer {
