@@ -3,23 +3,66 @@ html {
   background-size: cover;
 }
 
-.bg-image {
-  position: fixed;
-  z-index: -1;
-  -webkit-filter: opacity(50%);
-          filter: opacity(50%);
-  top: -10;
-}
-
 body {
   margin: 0;
   text-align: center;
+  background-image: url("/images/background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image {
+  position: fixed;
+  z-index: -1;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  top: 0;
 }
 
 header {
   background-color: transparent;
   display: block;
   text-align: center;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+
+header nav ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Brush Script MT", cursive;
+  font-size: 1rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  background-position: 0 100%;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+header nav ul li a:hover {
+  color: #cf7e49;
+}
+
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: black;
 }
 
 .main {
@@ -36,46 +79,6 @@ header {
   z-index: 10;
 }
 
-#navbar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: black;
-}
-
-nav {
-  width: 100%;
-}
-
-nav ul {
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 15px;
-}
-
-nav ul li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-family: "Brush Script MT", cursive;
-  font-size: 1rem;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 14px;
-  background-position: 0 100%;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-nav ul li a:hover {
-  color: #cf7e49;
-}
-
 .bodyContainer {
   margin-top: 60px;
   position: relative;
@@ -85,23 +88,43 @@ nav ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.bodyContainer:hover .imgText {
+  border-radius: 10px;
+  padding-top: 76px;
+  padding-bottom: 90px;
+  font-size: 1.5rem;
+}
+
+.bodyContainer .imgText {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.25rem;
+  font-family: "Brush Script MT", cursive;
+  color: #ffffff;
+  background-color: black;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.bodyContainer .imgText:hover {
+  color: #cf7e49;
 }
 
 img {
   border-radius: 10px;
-}
-
-.imgText {
-  position: absolute;
-  bottom: 0;
-  font-size: 1.25rem;
-  color: #ffffff;
-  background-color: black;
-  width: 100%;
-  border-radius: 10px;
-  text-decoration: none;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 footer {
