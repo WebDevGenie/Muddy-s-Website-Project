@@ -23,29 +23,26 @@ header {
   text-align: center;
 }
 
-
 #flex {
-  border-top: groove;
-  z-index: 10;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 30px;
   background-color: transparent;
   bottom: 0;
+  z-index: 10;
 
   // To control number of columns
-  // margin-left: 15%;
-  // margin-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #navbar {
-	position: sticky;
-	top: 0;
+  position: sticky;
+  top: 0;
   z-index: 1;
   background-color: black;
 }
-
 
 nav {
   width: 100%;
@@ -55,18 +52,18 @@ nav {
     margin: 0;
     padding: 15px;
     li {
-      display: inline;
+      display: inline-flex;
       font-family: $primaryFont;
       font-size: 1rem;
       a {
         color: $primaryBtn;
         text-decoration: none;
         padding: 14px;
-        background-position: 0 100%;     
-        -moz-transition: all .2s ease-in;
-        -o-transition: all .2s ease-in;
-        -webkit-transition: all .2s ease-in;
-        transition: all .2s ease-in;    
+        background-position: 0 100%;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
         &:hover {
           color: $hoverColor;
         }
@@ -75,31 +72,29 @@ nav {
   }
 }
 
-
-
 button {
   position: absolute;
   color: white;
   font-size: 1rem;
   border: none;
   cursor: pointer;
-  height:80px;
-  border-radius:50%;
-  -moz-border-radius:50%;
-  -webkit-border-radius:50%;
-  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 80px;
   background-color: black;
   pointer-events: auto;
   -ms-transform: translateX(-20%) translateY(-50%);
   transform: translateX(-20%) translateY(-50%);
-  -moz-transition: all .2s ease-in;
-  -o-transition: all .2s ease-in;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in; 
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   font-family: $primaryFont;
   &:hover {
     color: $hoverColor;
-  }  
+  }
 }
 
 .bodyContainer {
@@ -111,6 +106,6 @@ footer {
   background-color: black;
   color: white;
   font-family: $primaryFont;
-  position: absolute;
-  
+  bottom: 0%;
+  position: fixed;
 }

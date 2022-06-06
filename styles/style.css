@@ -22,8 +22,6 @@ header {
 }
 
 #flex {
-  border-top: groove;
-  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,6 +34,9 @@ header {
           column-gap: 30px;
   background-color: transparent;
   bottom: 0;
+  z-index: 10;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #navbar {
@@ -58,7 +59,9 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-family: "Brush Script MT", cursive;
   font-size: 1rem;
 }
@@ -68,8 +71,8 @@ nav ul li a {
   text-decoration: none;
   padding: 14px;
   background-position: 0 100%;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 nav ul li a:hover {
@@ -91,8 +94,8 @@ button {
   pointer-events: auto;
   -webkit-transform: translateX(-20%) translateY(-50%);
           transform: translateX(-20%) translateY(-50%);
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   font-family: "Brush Script MT", cursive;
 }
 
@@ -109,6 +112,7 @@ footer {
   background-color: black;
   color: white;
   font-family: "Brush Script MT", cursive;
-  position: absolute;
+  bottom: 0%;
+  position: fixed;
 }
 /*# sourceMappingURL=style.css.map */
