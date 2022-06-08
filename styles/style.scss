@@ -1,4 +1,5 @@
 @import "_variables";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 $primary-color: #ffffff;
 
@@ -11,9 +12,6 @@ html {
 body {
   margin: 0;
   text-align: center;
-  background-image: url("/images/background-2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .bg-image {
@@ -36,7 +34,7 @@ header {
       padding: 15px;
       li {
         display: inline-flex;
-        font-family: $primaryFont;
+        font-family: $secondaryFont;
         font-size: 1rem;
         a {
           color: $primaryBtn;
@@ -64,8 +62,10 @@ header {
 
 .main {
   display: grid;
+
+  // Set columns to 2
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 10px;
+  column-gap: 50px;
 
   max-width: max-content;
   margin: 0 auto;
@@ -86,17 +86,19 @@ header {
   &:hover {
     .imgText {
       border-radius: 10px;
-      padding-top: 76px;
+      padding-top: 70px;
       padding-bottom: 90px;
-      font-size: 1.5rem;
+      font-size: 1.75rem;
+      background-color: rgba($color: #000000, $alpha: 0.5);
     }
   }
 
   .imgText {
     position: absolute;
     bottom: 0;
-    font-size: 1.25rem;
-    font-family: $primaryFont;
+    font-size: 1.5rem;
+    font-family: $secondaryFont;
+    font-weight: 100;
     color: $primary-color;
     background-color: black;
     width: 100%;
@@ -109,9 +111,6 @@ header {
 
     // Smooth hover animation
     transition: 0.4s;
-    &:hover {
-      color: $hoverColor;
-    }
   }
 }
 
@@ -126,4 +125,10 @@ footer {
   font-family: $primaryFont;
   bottom: 0%;
   position: fixed;
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
