@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muddy's Cafe</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="script.js"></script>
   </head>
 
@@ -13,22 +17,27 @@
       <a href="index.html">
         <img src="logo.webp" alt="logo" srcset="" />
       </a>
-      <div id="navbar">
-        <nav>
-          <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="kidsparties.html">Kids Parties</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="menu-dropdown">
-              <a href="#menu" class="dropbtn">Menu</a>
-              <li><a href="breakfast.html">Breakfast</a></li>
-              <li><a href="lunch_dinner.html">Lunch/Dinner</a></li>
-              <li><a href="drinks.html">Drinks</a></li>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav id="navbar">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="kidsparties.html">Kids Parties</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown">
+            <a href="#menu" class="dropbtn"
+              >Menu
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="lunch_dinner.html">Lunch/Dinner</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <div class="main">
@@ -36,19 +45,16 @@
         <a href="" class="imgText"> Breakfast </a>
       </div>
       <div class="bodyContainer lunch">
-       
         <a href="" class="imgText"> Lunch </a>
       </div>
       <div class="bodyContainer drinks">
-        <img src="drinks.webp" alt="" srcset="" />
         <a href="" class="imgText"> Drinks </a>
       </div>
       <div class="bodyContainer kids-parties">
-        <img src="kidsparties.webp" alt="" srcset="" />
         <a href="" class="imgText"> Kids Parties </a>
       </div>
     </div>
-    <div class="section"></div>
+    <footer></footer>
   </body>
 
   <script src="index.js"></script>
