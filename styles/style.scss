@@ -80,6 +80,7 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  height: 200px;
 
   transition: 0.4s;
 
@@ -112,6 +113,20 @@ header {
     // Smooth hover animation
     transition: 0.4s;
   }
+}
+
+.breakfast {
+  background-image: url("/breakfast.webp");
+}
+
+.lunch {
+  background-image: url("/lunch.webp");
+}
+.drinks {
+  background-image: url("/drinks.webp");
+}
+.kids-parties {
+  background-image: url("/kidsparties.webp");
 }
 
 img {
