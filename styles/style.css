@@ -73,7 +73,7 @@ header nav ul li a:hover {
   display: none;
   position: absolute;
   background-color: #000000;
-  top: 50px;
+  top: 49px;
 }
 
 .dropdown {
@@ -110,7 +110,7 @@ header nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 10px;
+  border-radius: 15px;
   height: 200px;
   width: 300px;
   background-repeat: no-repeat;
@@ -124,7 +124,7 @@ header nav ul li a:hover {
   padding-top: 70px;
   padding-bottom: 90px;
   font-size: 1.75rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .bodyContainer .imgText {
