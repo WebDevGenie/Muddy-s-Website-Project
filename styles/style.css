@@ -120,14 +120,23 @@ header nav ul li a:hover {
 }
 
 .bodyContainer:hover .imgText {
-  border-radius: 10px;
-  padding-top: 70px;
+  border-radius: 15px;
+  padding-top: 71px;
   padding-bottom: 90px;
   font-size: 1.75rem;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .bodyContainer .imgText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 0;
   font-size: 1.5rem;
@@ -136,6 +145,9 @@ header nav ul li a:hover {
   color: #ffffff;
   background-color: black;
   width: 100%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   border-radius: 0px 0px 10px 10px;
   text-decoration: none;
   overflow: hidden;
