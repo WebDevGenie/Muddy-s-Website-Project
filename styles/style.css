@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-html {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 body {
   margin: 0;
   text-align: center;
@@ -30,7 +25,6 @@ header #navbar {
   top: 0;
   z-index: 1;
   background-color: black;
-  max-width: 600px;
   margin-inline: auto;
 }
 
@@ -45,22 +39,17 @@ header nav ul li {
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
   height: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header nav ul li .dropdown-contents {
-  background-color: red;
+  font-size: 1rem;
 }
 
 header nav ul li a {
   color: white;
   text-decoration: none;
   padding: 14px;
-  background-position: 0 100%;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -74,6 +63,9 @@ header nav ul li a:hover {
   position: absolute;
   background-color: #000000;
   top: 49px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .dropdown {
@@ -180,8 +172,8 @@ footer {
   margin-top: 100px;
   width: 100%;
   height: 100px;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   font-family: "Brush Script MT", cursive;
   bottom: 0;
 }
