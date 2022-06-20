@@ -1,14 +1,11 @@
 @import "_variables";
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 $primary-color: #ffffff;
-
-html {
-}
 
 body {
   margin: 0;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .bg-image {
@@ -31,7 +28,7 @@ header {
     top: 0;
     z-index: 1;
     background-color: black;
-    // max-width: 700px;
+    max-width: 600px;
     margin-inline: auto;
   }
 
@@ -78,7 +75,7 @@ header {
   }
 }
 
-.main {
+.body-main {
   display: grid;
 
   // Set columns to 2
@@ -159,6 +156,55 @@ img {
   border-radius: 10px;
 }
 
+// Body-text section
+#body-text {
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+  p {
+    max-width: 600px;
+    font-family: $secondaryFont;
+  }
+}
+
+// Chewzie Section
+#chewzie-section {
+  font-size: 1.5rem;
+  font-family: $kdamFont;
+  color: rgb(255, 143, 51);
+  .chewzie-btn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 143, 51);
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+    &:hover {
+      background-color: #2f90b6;
+      color: #ffffff;
+    }
+  }
+}
+
+// Contact section
+#contact-section {
+  margin-inline: auto;
+  height: 100px;
+  margin-top: 50px;
+  max-width: 600px;
+  font-family: $secondaryFont;
+}
+
+// Button needs to be in div to allow for transform: translateY()
+.click-btn {
+  transition: 0.4s;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
 footer {
   margin-top: 100px;
   width: 100%;
@@ -170,7 +216,7 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-  .main {
+  .body-main {
     grid-template-columns: repeat(1, 1fr);
   }
 }
