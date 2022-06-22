@@ -5,7 +5,7 @@ $primary-color: #ffffff;
 body {
   margin: 0;
   text-align: center;
-  margin-bottom: 50px;
+  height: 100%;
 }
 
 .bg-image {
@@ -189,12 +189,13 @@ img {
 }
 
 // Contact section
-#contact-section {
+.contact-section {
   margin-inline: auto;
-  height: 100px;
+  font-size: 1.5rem;
   margin-top: 50px;
   max-width: 400px;
   font-family: $secondaryFont;
+  padding: 30px;
 }
 
 // Button needs to be in div to allow for transform: translateY()
@@ -206,12 +207,12 @@ img {
 }
 
 footer {
-  margin-top: 100px;
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: #000000;
   color: #ffffff;
   font-family: $primaryFont;
+  position: relative;
   bottom: 0;
 }
 
