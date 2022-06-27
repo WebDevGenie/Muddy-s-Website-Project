@@ -30,6 +30,7 @@ header {
     background-color: black;
     max-width: 600px;
     margin-inline: auto;
+    border-radius: 10px;
   }
 
   nav {
@@ -63,6 +64,7 @@ header {
   background-color: #000000;
   top: 49px;
   width: min-content;
+  border-radius: 0px 0px 20px 20px;
 }
 
 // Display Menu sections on hover

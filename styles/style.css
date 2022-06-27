@@ -29,6 +29,7 @@ header #navbar {
   background-color: black;
   max-width: 600px;
   margin-inline: auto;
+  border-radius: 10px;
 }
 
 header nav ul {
@@ -69,6 +70,7 @@ header nav ul li a:hover {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .dropdown {
